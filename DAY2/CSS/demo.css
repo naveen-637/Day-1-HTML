@@ -1,0 +1,55 @@
+.c{
+    color :aqua;
+    background-color:rgb(110, 106, 106);
+}
+.b{
+    font-size:x-large;
+    color:rgb(255, 187, 0)
+}
+div{
+    border:2px solid red;
+    padding:10px;
+    margin:15px;
+    opacity:initial;
+}
+.highlight{
+    color:blue;
+}
+.a{
+    background-color:rgba(0, 0, 0, 0.452);
+}
+p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #4d0101;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.h{
+    border:2px dotted;
+    border-width:2px;
+    border-color:rgba(0, 0, 0, 0.24);
+    border-top-color:crimson;
+    border-radius:20px;
+    text-decoration:underline;
+    }
+.e{
+    margin: 25px 50px 70px;
+    border:10px outset black;
+}
+a:link {
+  color: blue; 
+}
+
+a:visited {
+  color: purple; 
+}
+
+a:hover {
+  color: red; 
+}
+
+a:active {
+  color: green;
+}
