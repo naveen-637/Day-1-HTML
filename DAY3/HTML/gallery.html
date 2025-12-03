@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flex Image Gallery</title>
+
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #291c1c;
+        margin: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #555;
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.08);
+        
+    }
+    h2{
+    background-color:red;    
+    }
+</style>
+
+</head>
+<body>
+
+<h2 > GALLERY </h2>
+<hr>
+<hr>
+<br>
+<br><br>
+<br>
+<br>
+
+<div class="gallery">
+    <img src="data:image/jpeg;base64,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" alt="Image 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEDiVuIEzcGsdKD_RfJwGIqM7ickNmdT7yg&s" alt="Image 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgVAE3NQWoiZwqqAFXGrWcF9D3OVK-WSNSQ&s" alt="Image 3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8TrqNnkDpg7WXB0kKFgo_iIde9Ki34CM4Bg&s" alt="Image 4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPeNz8bv5nTRNQ7pTotgTvFwPEpt47P3OVA&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOC1EySOmrUYR-g3H1_2-kgmFL7DtNlPDMaQ&s" alt="Image 6">
+     <div class="images"><img src="https://imgd.aeplcdn.com/1280x720/cw/ec/32650/Lamborghini-Urus-Exterior-116676.jpg?wm=0"><p>Kratos</p></div>
+        <div class="images"><img src="https://www.topgear.com/sites/default/files/2021/12/18.%20Koenigsegg%20Jesko.jpeg?w=424&h=239"><p>Kratos</p></div>
+        <div class="images"><img src="https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?cs=srgb&dl=pexels-adrian-dorobantu-989175-2127733.jpg&fm=jpg"><p>Kratos</p></div>
+        <div class="images"><img src="https://www.thedrive.com/wp-content/uploads/images-by-url-td/content/archive-images/lamborghini-egoista-electric-supercar-hero.jpg?quality=85"><p>Kratos</p></div>
+        <div class="images"><img src="https://robbreport.com/wp-content/uploads/2019/12/6092563g.jpg?w=800"><p>Kratos</p></div>
+        <div class="images"><img src="https://imgs.search.brave.com/p2CsJXOpK1hKIkTGhNXg8ryB4eTFUYrCoPxKa6NUXBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzYxLzM0/LzEwLzYxMzQxMDNm/MjZmM2NmNDZkN2Mz/YjlhMzBlNWFlNjBk/LmpwZw"><p>Kratos</p></div>
+        <div class="images"><img src="https://imgs.search.brave.com/p2CsJXOpK1hKIkTGhNXg8ryB4eTFUYrCoPxKa6NUXBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzYxLzM0/LzEwLzYxMzQxMDNm/MjZmM2NmNDZkN2Mz/YjlhMzBlNWFlNjBk/LmpwZw"><p>Kratos</p></div>
+        <div class="images"><img src="https://imgs.search.brave.com/p2CsJXOpK1hKIkTGhNXg8ryB4eTFUYrCoPxKa6NUXBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzYxLzM0/LzEwLzYxMzQxMDNm/MjZmM2NmNDZkN2Mz/YjlhMzBlNWFlNjBk/LmpwZw"><p>Kratos</p></div>
+ </div>
+
+</body>
+</html>
