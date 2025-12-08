@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #222;
+        }
+        .logo span {
+             color: #051193;
+        }
+
+        .search-container {
+            position: relative;
+            width: 40%;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-container i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .user-options {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .user-options i { margin-right: 8px; font-size: 16px; }
+
+        .navbar {
+            background-color: #051193; 
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-item { cursor: pointer; }
+        .nav-item i { margin-right: 5px; }
+
+        .hero-container {
+            padding: 30px 5%;
+        }
+
+        .hero-card {
+            background-color: #f8f9fa; 
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            overflow: hidden;
+            min-height: 450px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .hero-text p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-shop {
+            background-color: #051193;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-shop:hover { background-color: #05119374; }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 5%;
+            margin-bottom: 50px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            width: 23%;
+        }
+
+        .feature-item i {
+            font-size: 24px;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        .feature-text h4 { 
+            font-size: 14px; margin-bottom: 5px; 
+        }
+
+        .feature-text p { 
+            font-size: 12px; color: #777; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">e-shop<span>.</span></div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search Products...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="user-options">
+            <div><i class="shoppingcart"></i> Cart $150.00</div>
+            <div><i class="user"></i> User Account</div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="nav-item"><i class="fas fa-bars"></i> All Categories</div>
+            <div class="nav-item">Products <i class="fas fa-chevron-down"></i></div>
+            <div class="nav-item">Blog</div>
+            <div class="nav-item">Contact</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item">LIMITED SALE <i class="fas fa-heart"></i></div>
+            <div class="nav-item">Best Seller</div>
+            <div class="nav-item">New Arrival</div>
+        </div>
+    </nav>
+
+    <div class="hero-container">
+        <div class="hero-card">
+            <div class="hero-text">
+                <h1>Your One-Stop Electronic Market</h1>
+                <p>Welcome to e-shop, a place where you can buy everything about electronics. Sale every day!</p>
+                <button class="btn-shop">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/jpeg;base64,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" alt="Electronics Flat Lay">
+            </div>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="headset"></i>
+            <div class="feature-text">
+                <h4>Responsive</h4>
+                <p>Customer service available 24/7</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="shield-alt"></i>
+            <div class="feature-text">
+                <h4>Secure</h4>
+                <p>Certified marketplace since 2017</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="shipping-fast"></i>
+            <div class="feature-text">
+                <h4>Shipping</h4>
+                <p>Free, fast, and reliable worldwide</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="undo"></i>
+            <div class="feature-text">
+                <h4>Transparent</h4>
+                <p>Hassle-free return policy</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

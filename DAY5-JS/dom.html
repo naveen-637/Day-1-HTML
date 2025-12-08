@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="a">This is my para</p>
+    <p class="a">This is my para</p>    
+    <p class="b">hi i am pravin</p>
+    <p class="c">hi i am pravin</p>
+    <p id="d">how are you</p>
+
+    <button onclick="change()">Click me</button>
+    <h1 id="title">Hello World</h1>
+
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+
+    <button onclick="changeFirst()">Change First Item</button>
+    <button onclick="changeAll()">Change All Items</button>
+
+    <script>
+         function changeFirst() {
+            const firstItem = document.querySelector(".item");
+            firstItem.style.color = "red";  
+        }
+ 
+        function changeAll() {
+            const allItems = document.querySelectorAll(".item");
+            allItems.forEach(item => {
+                item.style.color = "green";   
+            });
+        }
+    </script>
+<script>
+        const para=document.getElementsByClassName("a");
+        for(let i=0;i<para.length;i++){     
+            para[i].style.color="blue";
+            para[i].style.backgroundColor="yellow";
+        }     
+        const para1=document.getElementsByClassName("b").innerText;
+        console.log(para1);
+
+        const para2=document.getElementsByClassName("c").textContent;
+        console.log(para2);
+
+        function change(){
+            document.getElementById("d").innerHTML="<b>The text has been changed</b>";
+            
+        }
+        
+    </script>
+</body>
+</html>
